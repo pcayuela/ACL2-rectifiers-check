@@ -13,6 +13,8 @@
 ; Workshop 2026), whose Section 5 sketched this development in
 ; pseudocode but never submitted it to the theorem prover.
 
+; cert_param: (uses-acl2r)
+
 (in-package "ACL2")
 (include-book "arithmetic-5/top" :dir :system)
 (include-book "nonstd/nsa/trig" :dir :system)

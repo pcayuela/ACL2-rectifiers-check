@@ -7,6 +7,8 @@
 ; proved in 00-sampling-function.lisp, and formalizes two findings
 ; that came out of this mechanization.
 
+; cert_param: (uses-acl2r)
+
 (in-package "ACL2")
 (include-book "00-sampling-function")
 

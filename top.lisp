@@ -9,6 +9,8 @@
 ; Requires ACL2(r) with the standard community books available (uses
 ; arithmetic-5/top and nonstd/nsa/trig, both :dir :system).
 
+; cert_param: (uses-acl2r)
+
 (in-package "ACL2")
 
 (include-book "00-sampling-function")

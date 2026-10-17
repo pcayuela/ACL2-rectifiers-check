@@ -11,6 +11,8 @@
 ; these three specific points -- a strictly stronger result than what
 ; the roadmap sketch asked for.
 
+; cert_param: (uses-acl2r)
+
 (in-package "ACL2")
 (include-book "00-sampling-function")
 
