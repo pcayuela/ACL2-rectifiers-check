@@ -17,6 +17,11 @@
 (include-book "arithmetic-5/top" :dir :system)
 (include-book "nonstd/nsa/trig" :dir :system)
 
+; GUARDS NOT VERIFIABLE for SA below: it calls ACL2-SINE from
+; nonstd/nsa/trig, whose own guards are unverified in the library (it is
+; defined through ACL2(r)'s standard-part machinery), and ACL2 refuses
+; to verify the guards of any function whose body calls one. SA is a
+; logical definition used only in proofs.
 ; --- Eq. (1): Sa(x) = sin(x)/x, with the standard Sa(0) = 1 convention.
 (defun sa (x) (if (equal x 0) 1 (/ (acl2-sine x) x)))
 
